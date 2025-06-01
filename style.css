@@ -12,11 +12,17 @@
         }
 
         .header {
+            top: 0;
+            left: 0;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 40px;
             background-color: #1E151C;
+            position: fixed; 
+            z-index: 1000;
+            
         }
 
         .logo {
@@ -89,6 +95,19 @@
         .social-links a:hover {
             opacity: 1;
         }
+
+        .cv-link {
+            color: #C8A19C;
+            font-size: 16px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .cv-link:hover {
+            opacity: 0.8;
+        }
+
 
         .about-section {
             margin-bottom: 80px;
