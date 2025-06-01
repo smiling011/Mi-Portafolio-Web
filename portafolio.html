@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de Vicky</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #FFE6F0;
+      color: #3B3B3B;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #FFB6C1;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .tecnologias img {
+      width: 80px;
+      margin: 10px;
+    }
+
+    footer {
+      background: #FFC0CB;
+      text-align: center;
+      padding: 1.5rem;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #D63384;
+      text-decoration: none;
+    }
+
+    .proyectos a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background: #FFB6C1;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+    }
+
+    .proyectos a:hover {
+      background: #e99dae;
+    }
+
+    @media (max-width: 600px) {
+      .tecnologias img {
+        width: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>✨ Portafolio de Vicky ✨</h1>
+    <p>Estudiante de Desarrollo de Software | Creadora de DackyApp 🐾</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>👩‍💻 Sobre mí</h2>
+      <p>Soy estudiante de Análisis y Desarrollo de Software apasionada por la tecnología. Me encanta crear aplicaciones móviles útiles y visualmente agradables. Actualmente trabajo en una app para el rastreo de mascotas llamada <strong>DackyApp</strong>.</p>
+    </div>
+
+    <div class="card proyectos">
+      <h2>🚀 Proyectos</h2>
+      <h3>DackyApp</h3>
+      <p>App móvil para rastrear mascotas con GPS, tarjeta de vacunas virtual y código QR.</p>
+      <a href="https://github.com/tuusuario/dacky_app" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <div class="card tecnologias">
+      <h2>🔧 Tecnologías que uso</h2>
+      <p>Estas son algunas de las tecnologías con las que trabajo:</p>
+      <div>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📫 Contacto</h2>
+      <p>💌 Correo: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+      <p>💼 LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>✨ Hecho con cariño rosita por Vicky 💖</p>
+  </footer>
+
+</body>
+</html>
