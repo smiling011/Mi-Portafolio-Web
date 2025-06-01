@@ -20,7 +20,7 @@
         }
 
         .logo {
-            font-size: 24px;
+            font-size: 40px;
             color: #C8A19C;
         }
 
@@ -92,8 +92,14 @@
 
         .about-section {
             margin-bottom: 80px;
+            display: flex;
+            justify-content: flex-end;
         }
 
+        about-wrapper {
+        max-width: 600px;
+        text-align: left;
+        }
         .about-section h3 {
             font-size: 32px;
             margin-bottom: 30px;
@@ -138,82 +144,55 @@
         }
 
         .skill-icons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
         }
 
         .skill-icon {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            font-size: 24px;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        transition: transform 0.3s;
         }
 
-        .html5 { background-color: #E34F26; color: white; }
-        .css3 { background-color: #1572B6; color: white; }
-        .js { background-color: #F7DF1E; color: black; }
-        .python { background-color: #3776AB; color: white; }
-        .react { background-color: #61DAFB; color: black; }
-        .django { background-color: #092E20; color: white; }
-        .flutter { background-color: #02569B; color: white; }
-        .mysql { background-color: #4479A1; color: white; }
-        .git { background-color: #F05032; color: white; }
-        .figma { background-color: #F24E1E; color: white; }
-        .notion { background-color: #000; color: white; }
-        .github { background-color: #181717; color: white; }
-
-        .languages-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+        .skill-icon:hover {
+         transform: scale(1.1);
         }
 
-        .lang-card {
-            background-color: rgba(196, 164, 132, 0.1);
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid rgba(196, 164, 132, 0.2);
+        .skill-icons-mini {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+        }
+
+        .skill-icon-mini {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        transition: transform 0.3s;
+        }
+
+        .skill-icon-mini:hover {
+         transform: scale(1.1);
         }
 
         .lang-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
         }
 
         .flag {
-            width: 30px;
-            height: 20px;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-        }
-
-        .flag.uk {
-            background: linear-gradient(to bottom, #012169 33%, white 33%, white 66%, #C8102E 66%);
-            position: relative;
-        }
-
-        .flag.uk::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: 
-                linear-gradient(45deg, transparent 45%, white 45%, white 55%, transparent 55%),
-                linear-gradient(-45deg, transparent 45%, white 45%, white 55%, transparent 55%);
-        }
-
-        .flag.spain {
-            background: linear-gradient(to bottom, #AA151B 25%, #F1BF00 25%, #F1BF00 75%, #AA151B 75%);
-        }
+         width: 30px;
+        height: 20px;
+        margin-right: 10px;
+        object-fit: contain;
+         }
 
         .projects-section {
             margin-bottom: 80px;
@@ -232,51 +211,15 @@
             border: 1px solid rgba(196, 164, 132, 0.2);
             max-width: 400px;
         }
+.project-image {
+    width: 100%;
+    height: 200px;
+    background-image: url('img/1.png'); /* Cambia esta ruta */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-        .project-image {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #2D5A27, #4A7C59);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .dacky-logo {
-            color: white;
-            font-size: 48px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .dacky-eyes {
-            position: absolute;
-            top: 60px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
-        }
-
-        .eye {
-            width: 12px;
-            height: 12px;
-            background-color: white;
-            border-radius: 50%;
-        }
-
-        .dacky-nose {
-            position: absolute;
-            bottom: 80px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-top: 12px solid white;
-        }
 
         .project-info {
             padding: 30px;
@@ -319,41 +262,78 @@
         }
 
         .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #F3ECE3;
+    margin-bottom: 20px;
+}
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            font-size: 16px;
-        }
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #F3ECE3;
+    margin-bottom: 10px;
+}
 
-        .contact-item i {
-            width: 20px;
-            text-align: center;
-            opacity: 0.8;
-        }
+.copy-icon {
+    cursor: pointer;
+    color: #D8CFBC;
+    transition: color 0.3s ease;
+}
 
-        .cv-button {
-            background-color: #C8A19C;
-            color: #2D1B2E;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
+.copy-icon:hover {
+    color: #F3ECE3;
+}
 
-        .cv-button:hover {
-            background-color: #B8956F;
-        }
+.cv-container {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 120px;
+    background-color: #C8A19C;
+    color: #1E151C;
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    z-index: 1000;
+    box-shadow: #1E151C;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0.4s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.cv-button {
+    background-color: #C8A19C;
+    color: #1E151C;
+    padding: 8px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #F3ECE3;
+}
+
 
         .footer {
             text-align: center;
