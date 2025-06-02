@@ -128,10 +128,23 @@
         }
 
         .hero h2 {
-            font-size: 48px;
+            font-size: 30px;
             font-weight: 400;
             margin-bottom: 40px;
         }
+
+        #cursor {
+  display: inline-block;
+  color: #C8A19C;
+  font-weight: bold;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
 
         .social-links {
             display: flex;
@@ -183,9 +196,16 @@
         }
         .about-section h3 {
             font-size: 32px;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             font-weight: 300;
         }
+
+        .about-section:hover {
+            color: #FCDADA;
+            transform: scale(1.05);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
 
         .about-text {
             font-size: 16px;
@@ -202,6 +222,12 @@
             font-size: 32px;
             margin-bottom: 40px;
             font-weight: 300;
+        }
+
+        .skills-section:hover {
+            color: #FCDADA;
+            transform: scale(1.05);
+            transition: transform 0.3s ease, color 0.3s ease;
         }
 
         .skills-grid {
@@ -285,6 +311,12 @@
             font-weight: 300;
         }
 
+        .projects-section:hover {
+            color: #FCDADA;
+            transform: scale(1.05);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
         .project-card {
             background-color: rgba(196, 164, 132, 0.1);
             border-radius: 12px;
@@ -340,6 +372,12 @@
             font-size: 32px;
             margin-bottom: 40px;
             font-weight: 300;
+        }
+
+        .contact-section:hover {
+            color: #FCDADA;
+            transform: scale(1.05);
+            transition: transform 0.3s ease, color 0.3s ease;
         }
 
         .contact-info {

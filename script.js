@@ -50,10 +50,52 @@ window.addEventListener('load', () => {
     }, 1000); // después de 1 segundo de cargar
   });
 
+// animacion escrita del inicio:
 
-  // particulas de fondo noooo
+const textArray = [
+  "Desarrolladora Full Stack",
+  "Desarrolladora Web",
+  "Desarrolladora Movil",
+  "Aprendiz"
+];
+
+let currentText = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typedTextSpan = document.getElementById("typed-text");
+
+function type() {
+  const current = textArray[currentText];
+  
+  if (isDeleting) {
+    charIndex--;
+    typedTextSpan.textContent = current.substring(0, charIndex);
+  } else {
+    charIndex++;
+    typedTextSpan.textContent = current.substring(0, charIndex);
+  }
+
+  let delay = isDeleting ? 60 : 100;
+
+  if (!isDeleting && charIndex === current.length) {
+    delay = 1000;
+    isDeleting = true;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    currentText = (currentText + 1) % textArray.length;
+    delay = 500;
+  }
+
+  setTimeout(type, delay);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  type();
+});
 
 
+
+// funciones adicionales
 function copyToClipboard(id) {
     const text = document.getElementById(id).textContent;
     navigator.clipboard.writeText(text).then(() => {
