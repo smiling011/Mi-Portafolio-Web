@@ -53,9 +53,9 @@ window.addEventListener('load', () => {
 // animacion escrita del inicio:
 
 const textArray = [
-  "Desarrolladora Full Stack",
-  "Desarrolladora Web",
-  "Desarrolladora Movil",
+  "Desarrollador Full Stack",
+  "Desarrollador Web",
+  "Desarrollador Movil",
   "Aprendiz"
 ];
 
