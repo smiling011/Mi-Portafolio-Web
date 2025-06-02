@@ -50,6 +50,10 @@ window.addEventListener('load', () => {
     }, 1000); // después de 1 segundo de cargar
   });
 
+
+  // particulas de fondo noooo
+
+
 function copyToClipboard(id) {
     const text = document.getElementById(id).textContent;
     navigator.clipboard.writeText(text).then(() => {
@@ -76,3 +80,6 @@ function copyEmail() {
         console.error("Error al copiar el correo: ", err);
     });
 }
+
+
+
