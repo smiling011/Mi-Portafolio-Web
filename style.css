@@ -25,6 +25,59 @@
             
         }
 
+        /* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1E151C; /* Fondo blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Flor de sakura */
+.sakura-flower {
+  width: 100px;
+  height: 100px;
+  background-image: url('img/sakura.png'); /* Reemplaza con la ruta de tu imagen */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: spin 2s linear infinite;
+}
+
+/* Animación de giro */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#petal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 10;
+}
+
+.petal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url('img/petalos.png'); /* Usa tu imagen aquí */
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+
+
         .logo {
             font-size: 40px;
             color: #C8A19C;
