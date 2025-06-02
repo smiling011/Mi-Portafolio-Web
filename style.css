@@ -274,6 +274,11 @@ input:checked + .slider::before {
             transition: transform 0.3s ease, color 0.3s ease;
         }
 
+        /* .interactive{
+            transform: scale(1.05);
+            transition: transform 0.3s ease, color 0.3s ease;
+        } */
+        
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -438,12 +443,17 @@ input:checked + .slider::before {
     gap: 10px;
     color: #F3ECE3;
     margin-bottom: 10px;
+    text-decoration: none;
+
 }
+
 
 .copy-icon {
     cursor: pointer;
     color: #D8CFBC;
     transition: color 0.3s ease;
+    text-decoration: none;
+
 }
 
 .copy-icon:hover {
