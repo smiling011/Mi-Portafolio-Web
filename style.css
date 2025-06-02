@@ -99,6 +99,7 @@
         .cv-link {
             color: #C8A19C;
             font-size: 16px;
+            font-weight: bold;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -106,6 +107,7 @@
         }
         .cv-link:hover {
             opacity: 0.8;
+            text-decoration: underline;
         }
 
 
@@ -387,3 +389,15 @@
                 gap: 15px;
             }
         }
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .cv-button {
+    width: auto;
+    padding: 10px 20px;
+  }
+}
