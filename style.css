@@ -227,7 +227,7 @@ input:checked + .slider::before {
             text-decoration: underline;
         }
 
-
+        /* #sobre mi section */
         .about-section {
             margin-bottom: 80px;
             display: flex;
@@ -258,6 +258,22 @@ input:checked + .slider::before {
             max-width: 600px;
         }
 
+        .about-content {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+            .about-video {
+            flex: 1 1 300px;
+            max-width: 400px;
+        }
+
+            
+
+        /* habilidades sction */
         .skills-section {
             margin-bottom: 80px;
         }
