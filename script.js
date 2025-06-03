@@ -55,7 +55,7 @@ window.addEventListener('load', () => {
 const textArray = [
   "Desarrollador Full Stack",
   "Desarrollador Web",
-  "Desarrollador Movil",
+  "Desarrollador Móvil",
   "Aprendiz"
 ];
 
