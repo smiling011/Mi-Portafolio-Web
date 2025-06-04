@@ -50,48 +50,54 @@ window.addEventListener('load', () => {
     }, 1000); // después de 1 segundo de cargar
   });
 
-// animacion escrita del inicio:
-
-const textArray = [
-  "Desarrollador Full Stack",
-  "Desarrollador Web",
-  "Desarrollador Móvil",
-  "Aprendiz"
-];
-
-let currentText = 0;
+// Animación tipo máquina de escribir
+let currentTextIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 const typedTextSpan = document.getElementById("typed-text");
+let typedTexts = []; // Este arreglo se actualizará dinámicamente
 
-function type() {
-  const current = textArray[currentText];
-  
-  if (isDeleting) {
-    charIndex--;
-    typedTextSpan.textContent = current.substring(0, charIndex);
-  } else {
+function typeWriterEffect() {
+  if (typedTexts.length === 0) return;
+
+  const current = typedTexts[currentTextIndex];
+
+  if (!isDeleting) {
+    typedTextSpan.textContent = current.substring(0, charIndex + 1);
     charIndex++;
-    typedTextSpan.textContent = current.substring(0, charIndex);
+    if (charIndex === current.length) {
+      isDeleting = true;
+      setTimeout(typeWriterEffect, 1500);
+      return;
+    }
+  } else {
+    typedTextSpan.textContent = current.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      currentTextIndex = (currentTextIndex + 1) % typedTexts.length;
+    }
   }
 
-  let delay = isDeleting ? 60 : 100;
-
-  if (!isDeleting && charIndex === current.length) {
-    delay = 1000;
-    isDeleting = true;
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    currentText = (currentText + 1) % textArray.length;
-    delay = 500;
-  }
-
-  setTimeout(type, delay);
+  setTimeout(typeWriterEffect, isDeleting ? 50 : 100);
 }
 
+// Esta función será llamada desde lang.js
+window.updateTypedText = function (newTexts) {
+  typedTexts = newTexts;
+  currentTextIndex = 0;
+  charIndex = 0;
+  isDeleting = false;
+};
+
+
+// Espera a que el DOM esté cargado antes de iniciar
 document.addEventListener("DOMContentLoaded", () => {
-  type();
+  const savedLang = localStorage.getItem('lang') || 'es';
+  window.updateTypedText(langData[savedLang].typedTexts); // Carga el idioma correcto
+  typeWriterEffect();
 });
+
 
 
 

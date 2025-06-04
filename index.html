@@ -25,17 +25,17 @@
               <input type="checkbox" id="langToggle">
               <span class="slider"></span>
             </label>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#inicio" data-key="nav-home">Inicio</a>
+            <a href="#sobre-mi" data-key="nav-about">Sobre mí</a>
+            <a href="#habilidades" data-key="nav-skills">Habilidades</a>
+            <a href="#proyectos" data-key="nav-projects">Proyectos</a>
+            <a href="#contacto" data-key="nav-contact">Contacto</a>
         </nav>
     </header>
 
     <div class="container">
         <section class="hero" id="inicio">
-            <h1>Holis, Soy Victoria Vielma !</h1>
+            <h1 data-key="greeting">Holis, Soy Victoria Vielma !</h1>
             <h2><span id="typed-text"></span><span id="cursor">|</span></h2>
             <div class="social-links">
                 <a href="https://github.com/smiling011" target="_blank" ><i class="fab fa-github"></i></a>
@@ -52,16 +52,16 @@
             <div class="about-content">
               <div class="about-video">
                 <video width="100%" controls autoplay muted loop>
-                  <source src="video/vicky.mp4" type="video/mp4">
+                  <source src="video/vicky.mp4" type="video/mp4" data-key="video-not-supported">
                   Tu navegador no soporta video HTML5.
                 </video>
               </div>
               
               <div class="about-text">
-                <h3>Sobre mí</h3>
-                <p>Desarrollador Full Stack Web y Móvil, con formación técnica en programación de software. Actualmente estudio Análisis y Desarrollo de Software.</p>
-                <p>Me especializo en el desarrollo de aplicaciones web y móviles, con enfoque en crear soluciones funcionales y bien estructuradas.</p>
-                <p>Me interesa seguir desarrollando mis habilidades en entornos reales y contribuir en equipos de desarrollo donde pueda aportar desde mi conocimiento técnico.</p>
+                <h3 data-key="about-title">Sobre mí</h3>
+                <p data-key="about-p1">Desarrollador Full Stack Web y Móvil, con formación técnica en programación de software. Actualmente estudio Análisis y Desarrollo de Software.</p>
+                <p data-key="about-p2">Me especializo en el desarrollo de aplicaciones web y móviles, con enfoque en crear soluciones funcionales y bien estructuradas.</p>
+                <p data-key="about-p3">Me interesa seguir desarrollando mis habilidades en entornos reales y contribuir en equipos de desarrollo donde pueda aportar desde mi conocimiento técnico.</p>
               </div>
             </div>
           </div>
@@ -70,10 +70,10 @@
 
 
         <section class="skills-section" id="habilidades">
-            <h3>Habilidades</h3>
+            <h3 data-key="skills-title">Habilidades</h3>
             <div class="skills-grid">
                 <div class="skill-card">
-  <h4>Lenguajes</h4>
+  <h4 data-key="skills-languages">Lenguajes</h4>
   <div class="skill-icons">
     <img src="img/piton.png" alt="Python" class="skill-icon" />
     <img src="img/js.png" alt="JavaScript" class="skill-icon" />
@@ -84,7 +84,7 @@
 </div>
 
 <div class="skill-card">
-  <h4>Frameworks</h4>
+  <h4 data-key="skills-frameworks">Frameworks</h4>
   <div class="skill-icons">
     <img src="img/prog-flask_icon-icons.com_50797.png" alt="Flask" class="skill-icon" />
     <img src="img/file_type_django_icon_130645.png" alt="Django" class="skill-icon" />
@@ -93,14 +93,14 @@
 </div>
 
 <div class="skill-card">
-  <h4>Base de Datos</h4>
+  <h4 data-key="skills-databases">Base de Datos</h4>
   <div class="skill-icons">
     <img src="img/mysql_original_wordmark_logo_icon_146417.png" alt="MySQL" class="skill-icon" />
   </div>
 </div>
 
 <div class="skill-card">
-  <h4>Herramientas</h4>
+  <h4 data-key="skills-tools">Herramientas</h4>
   <div class="skill-icons">
     <img src="img/git_plain_logo_icon_146507.png" alt="Git" class="skill-icon" />
     <img src="img/github_git_icon_145985.png" alt="GitHub" class="skill-icon" />
@@ -111,27 +111,27 @@
 </div>
 
 <div class="skill-card">
-  <h4>Idiomas</h4>
+  <h4 data-key="skills-langs">Idiomas</h4>
   <div class="lang-item">
     <img src="img/gb_flag_great_britain_england_union_jack_english_icon_228674.png" alt="Inglés" class="flag" />
-    <span>A2 - En formación</span>
+    <span data-key="lang-english">A2 - En formación</span>
   </div>
   <div class="lang-item">
     <img src="img/3253482-flag-spain-icon_106784.png" alt="Español" class="flag" />
-    <span>Nativo</span>
+    <span data-key="lang-spanish">Nativo</span>
   </div>
 </div>
 
         </section>
 
         <section class="projects-section" id="proyectos">
-            <h3>Proyectos</h3>
+            <h3 data-key="projects-title">Proyectos</h3>
             <div class="project-card">
                 <div class="project-image"></div>
                 <div class="project-info">
-                    <h4 class="project-title">DACKY</h4>
-                    <p class="project-description">Aplicación para rastreo GPS de mascotas</p>
-                    <a href="https://github.com/smiling011/ProyectoDacky.git" target="_blank" class="project-link">
+                    <h4 class="project-title" data-key="project-dacky-title">DACKY</h4>
+                    <p class="project-description" data-key="project-dacky-description">Aplicación para rastreo GPS de mascotas</p>
+                    <a href="https://github.com/smiling011/ProyectoDacky.git" target="_blank" class="project-link" data-key="project-dacky-link">
                         Ver repositorio 
                         <i class="fas fa-arrow-right"></i>
                         <i class="fab fa-github"></i>
@@ -151,7 +151,7 @@
         </section>
 
         <section class="contact-section" id="contacto">
-            <h3>Contacto</h3>
+            <h3 data-key="contact-title">Contacto</h3>
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
@@ -165,16 +165,16 @@
                 </div>
                 <a class="contact-item" href="https://www.linkedin.com/in/victoria-vielma" target="_blank">
                   <i class="fab fa-linkedin"></i>
-                  <span>Mi perfil de Linkedin</span>
+                  <span data-key="linkedin-profile">Mi perfil de Linkedin</span>
                 </a>
                 <a class="contact-item" href="https://github.com/smiling011" target="_blank">
                   <i class="fab fa-github"></i>
-                  <span>Mi perfil de GitHub</span>
+                  <span data-key="github-profile">Mi perfil de GitHub</span>
                 </a>
 
 
                 <div class="cv-container">
-                  <a href="Hoja de Vida Victoria Vielma.pdf" target="_blank" class="cv-button">
+                  <a href="Hoja de Vida Victoria Vielma.pdf" target="_blank" class="cv-button" data-key="cv-button">
                     <i class="fas fa-external-link-alt"></i>
                     CV
                   </a>
@@ -184,9 +184,9 @@
     </div>
 
     <footer class="footer">
-        <p>Victoria Vielma 2025 © Todos los derechos reservados</p>
+        <p data-key="footer-text">Victoria Vielma 2025 © Todos los derechos reservados</p>
     </footer>
-
+    <script src="lang.js"></script>
     <script src="script.js"></script>
     <div id="toast" class="toast">¡Copiado!</div>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
