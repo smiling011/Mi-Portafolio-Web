@@ -3,6 +3,11 @@
             padding: 0;
             box-sizing: border-box;
         }
+        @font-face {
+            font-family: 'MiFuente';
+            src: url('fonts/vhs-gothic.ttf') format('truetype');
+            }
+
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -168,13 +173,14 @@ input:checked + .slider::before {
         }
 
         .hero h1 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 70px;
+            font-family: MiFuente;
+            font-size: 60px;
             font-weight: 300;
             margin-bottom: 10px;
         }
 
         .hero h2 {
+            font-family: MiFuente;
             font-size: 40px;
             font-weight: 400;
             margin-bottom: 40px;
@@ -239,6 +245,7 @@ input:checked + .slider::before {
         text-align: left;
         }
         .about-section h3 {
+            font-family: MiFuente;
             font-size: 32px;
             margin-bottom: 40px;
             font-weight: 300;
@@ -287,6 +294,7 @@ input:checked + .slider::before {
         }
 
         .skills-section h3 {
+            font-family: MiFuente;
             font-size: 32px;
             margin-bottom: 40px;
             font-weight: 300;
@@ -378,6 +386,7 @@ input:checked + .slider::before {
         }
 
         .projects-section h3 {
+            font-family: MiFuente;
             font-size: 32px;
             margin-bottom: 40px;
             font-weight: 300;
@@ -441,6 +450,7 @@ input:checked + .slider::before {
         }
 
         .contact-section h3 {
+            font-family: MiFuente;
             font-size: 32px;
             margin-bottom: 40px;
             font-weight: 300;

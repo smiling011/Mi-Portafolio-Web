@@ -60,7 +60,7 @@ const langData = {
     "nav-projects": "Proyectos",
     "nav-contact": "Contacto",
 
-    "greeting": "¡Hola, soy Victoria Vielma!",
+    "greeting": "Hola, soy Victoria Vielma!",
 
     // Sobre mí
     "about-title": "Sobre mí",
